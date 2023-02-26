@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-light_black_text bg-white scrollBar;
+  }
+  button {
+    @apply bg-yellow_bg text-btn_text font-semibold p-2 text-lg rounded-lg border-[3px] border-light_purple;
+  }
+  a,
+  li {
+    @apply hover:text-purple_text cursor-pointer;
+  }
+  img {
+    @apply w-full h-full object-cover;
+  }
+}
+
+@layer components {
+  .max_width {
+    @apply max-w-[1250px] mx-auto;
+  }
+  .img_container {
+    @apply bg-light_purple shadow-[0_35px_60px_-15px_#c9b8ec] rounded-t-full rounded-b-[2000px] relative h-[22rem] sm:h-[25rem] lg:h-[32rem] w-[18rem] sm:w-[20rem] lg:w-[24rem] z-50 mx-auto border-[1.1rem] border-white;
+  }
+  .scrollBar {
+    @apply scrollbar-thin scrollbar-thumb-purple_bg scrollbar-track-[#f9f1fe] scrollbar-w-[0.5rem] scrollbar-h-[0.5rem] scrollbar-track-rounded-xl scrollbar-thumb-rounded-xl;
+  }
+
+  // footer
+  .footer {
+    div {
+      @apply space-y-2 py-3;
+    }
+    h1 {
+      @apply text-purple_text font-bold text-xl;
+    }
+    ul {
+      @apply space-y-1;
+    }
+  }
+}
